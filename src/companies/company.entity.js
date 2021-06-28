@@ -1,13 +1,5 @@
 const mongoose = require('mongoose');
 
-const UploadedFile = new mongoose.Schema({
-  path: String,
-  type: String,
-  size: Number,
-  folder: String,
-  filename: String,
-});
-
 const CompanySchema = new mongoose.Schema({
   companyName: {
     type: String,
@@ -20,10 +12,9 @@ const CompanySchema = new mongoose.Schema({
   address: {
     type: String,
   },
-  // profilePhotoLocation: {
-  //   type: String,
-  // },
-  uploadedFile: UploadedFile,
+  profilePhotoLocation: {
+    type: String,
+  },
   encryptedPassword: {
     type: String,
     required: true,

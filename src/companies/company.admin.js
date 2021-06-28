@@ -1,6 +1,6 @@
 const path = require('path');
 const AdminBro = require('admin-bro');
-const uploadFeature = require('@admin-bro/upload');
+// const uploadFeature = require('@admin-bro/upload');
 const { Company } = require('./company.entity');
 const { before: passwordBeforeHook, after: passwordAfterHook } = require('../actions/password.hook');
 const { before: uploadImageBeforeHook, after: uploadImageAfterHook } = require('../actions/upload-image.hook');
